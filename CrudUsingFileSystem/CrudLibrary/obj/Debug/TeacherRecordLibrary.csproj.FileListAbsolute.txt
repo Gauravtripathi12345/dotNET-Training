@@ -1,0 +1,6 @@
+C:\Users\hp\source\repos\CrudUsingFileSystem\CrudLibrary\obj\Debug\TeacherRecordLibrary.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\CrudUsingFileSystem\CrudLibrary\obj\Debug\TeacherRecordLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\CrudUsingFileSystem\CrudLibrary\bin\Debug\CrudLibrary.dll
+C:\Users\hp\source\repos\CrudUsingFileSystem\CrudLibrary\bin\Debug\CrudLibrary.pdb
+C:\Users\hp\source\repos\CrudUsingFileSystem\CrudLibrary\obj\Debug\CrudLibrary.dll
+C:\Users\hp\source\repos\CrudUsingFileSystem\CrudLibrary\obj\Debug\CrudLibrary.pdb
