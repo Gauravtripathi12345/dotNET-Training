@@ -1,0 +1,6 @@
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamLibrary\bin\Debug\PlayerAndTeamLibrary.dll
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamLibrary\bin\Debug\PlayerAndTeamLibrary.pdb
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamLibrary\obj\Debug\PlayerAndTeamLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamLibrary\obj\Debug\PlayerAndTeamLibrary.dll
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamLibrary\obj\Debug\PlayerAndTeamLibrary.pdb
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamLibrary\obj\Debug\PlayerAndTeamLibrary.csproj.AssemblyReference.cache

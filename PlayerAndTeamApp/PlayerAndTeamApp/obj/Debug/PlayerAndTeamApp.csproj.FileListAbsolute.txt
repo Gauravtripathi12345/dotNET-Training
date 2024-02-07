@@ -1,0 +1,10 @@
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\bin\Debug\PlayerAndTeamApp.exe.config
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\bin\Debug\PlayerAndTeamApp.exe
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\bin\Debug\PlayerAndTeamApp.pdb
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\obj\Debug\PlayerAndTeamApp.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\obj\Debug\PlayerAndTeamApp.exe
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\obj\Debug\PlayerAndTeamApp.pdb
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\bin\Debug\PlayerAndTeamLibrary.dll
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\bin\Debug\PlayerAndTeamLibrary.pdb
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\obj\Debug\PlayerAndTeamApp.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Tricon\Project\PlayerAndTeamApp\PlayerAndTeamApp\obj\Debug\PlayerAndTeamApp.csproj.CopyComplete
