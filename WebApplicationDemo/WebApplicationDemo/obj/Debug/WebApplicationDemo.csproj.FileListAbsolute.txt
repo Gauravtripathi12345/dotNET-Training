@@ -76,3 +76,4 @@ C:\Users\hp\Desktop\Tricon\dotNET-Training\WebApplicationDemo\WebApplicationDemo
 C:\Users\hp\Desktop\Tricon\dotNET-Training\WebApplicationDemo\WebApplicationDemo\obj\Debug\WebApplicationDemo.csproj.CopyComplete
 C:\Users\hp\Desktop\Tricon\dotNET-Training\WebApplicationDemo\WebApplicationDemo\obj\Debug\WebApplicationDemo.dll
 C:\Users\hp\Desktop\Tricon\dotNET-Training\WebApplicationDemo\WebApplicationDemo\obj\Debug\WebApplicationDemo.pdb
+C:\Users\hp\Desktop\Tricon\dotNET-Training\WebApplicationDemo\WebApplicationDemo\obj\Debug\WebApplicationDemo.csproj.AssemblyReference.cache

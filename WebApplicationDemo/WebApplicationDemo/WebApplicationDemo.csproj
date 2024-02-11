@@ -123,9 +123,11 @@
     <Compile Include="Controllers\ArithmeticController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ElectronicProducts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -166,11 +168,16 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Arithmetic\Addnos.cshtml" />
     <Content Include="Views\Arithmetic\SubtractNos.cshtml" />
+    <Content Include="Views\Customers\Login.cshtml" />
+    <Content Include="Views\Customers\Register.cshtml" />
+    <Content Include="Views\Customers\Cart.cshtml" />
+    <Content Include="Views\Products\ProductList.cshtml" />
+    <Content Include="Views\Products\ShowNumbers.cshtml" />
+    <Content Include="Views\Products\AvailableProducts.cshtml" />
+    <Content Include="Views\Products\PendingProductsToDeliver.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\Customers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
