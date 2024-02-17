@@ -1,36 +1,22 @@
-﻿using EmployeeManagementSystem.Models;
-using System.Collections.Generic;
-using System.Linq;
+﻿using EmployeeManagementLibrary;
 using System.Web.Mvc;
 
 namespace EmployeeManagementSystem.Controllers
 {
     public class EmployeeController : Controller
     {
-        private static List<EmployeeModel> empList;
 
-        static EmployeeController()
+        private readonly EmployeeDataAccess employeeDataAccess;
+
+        public EmployeeController()
         {
-            // Initialize empList with default values
-            empList = new List<EmployeeModel>();
-
-            empList.Add(new EmployeeModel() { Id = 1, Name = "Sunita", Department = "Accounts" });
-            empList.Add(new EmployeeModel() { Id = 2, Name = "Parag", Department = "HR" });
-            empList.Add(new EmployeeModel() { Id = 2, Name = "Paresh", Department = "Sales" });
-
+            employeeDataAccess = new EmployeeDataAccess();
         }
 
-        // GET: Employee
         public ActionResult Index()
         {
-            // Retrieve empList from session
-            List<EmployeeModel> empListFromSession = Session["empList"] as List<EmployeeModel>;
-            if (empListFromSession != null)
-            {
-                empList = empListFromSession;
-            }
-
-            return View(empList);
+            var employees = employeeDataAccess.GetAllEmployees();
+            return View(employees);
         }
 
         public ActionResult InsertNewEmployee()
@@ -41,90 +27,58 @@ namespace EmployeeManagementSystem.Controllers
         [HttpPost]
         public ActionResult InsertNewEmployee(string name, string department)
         {
-            // Create a new employee
-            EmployeeModel newEmployee = new EmployeeModel
+            var newEmployee = new Employee
             {
-                Id = empList.Count + 1,
                 Name = name,
                 Department = department
             };
-
-            empList.Add(newEmployee);
-
-            Session["empList"] = empList;
+            employeeDataAccess.InsertEmployee(newEmployee);
 
             return RedirectToAction("Index");
         }
 
         public ActionResult Edit(int id)
         {
-            EmployeeModel employeeToEdit = empList.Find(emp => emp.Id == id);
-            if (employeeToEdit == null)
+            var employee = employeeDataAccess.GetEmployeeById(id);
+            if (employee == null)
             {
                 return Content("Employee not found");
             }
-
-            return View(employeeToEdit);
+            return View(employee);
         }
 
         [HttpPost]
-        public ActionResult Edit(EmployeeModel editedEmployee)
+        public ActionResult Edit(Employee editedEmployee)
         {
-            EmployeeModel employeeToEdit = empList.Find(emp => emp.Id == editedEmployee.Id);
-
-            if (employeeToEdit != null)
-            {
-                employeeToEdit.Name = editedEmployee.Name;
-                employeeToEdit.Department = editedEmployee.Department;
-
-                Session["empList"] = empList;
-            }
-
+            employeeDataAccess.UpdateEmployee(editedEmployee);
             return RedirectToAction("Index");
         }
 
         public ActionResult Details(int id)
         {
-            EmployeeModel employeeDetailsToDisplay = empList.Find(emp => emp.Id == id);
-
-            if (employeeDetailsToDisplay == null)
+            var employee = employeeDataAccess.GetEmployeeById(id);
+            if (employee == null)
             {
-                return Content("Employee details not found");
+                return Content("Employee not found");
             }
-
-            return View(employeeDetailsToDisplay);
+            return View(employee);
         }
 
         public ActionResult Delete(int id)
         {
-            EmployeeModel employeeToDelete = empList.Find(emp => emp.Id == id);
-
-            if (employeeToDelete == null)
+            var employee = employeeDataAccess.GetEmployeeById(id);
+            if (employee == null)
             {
-                return Content("No employee found");
+                return Content("Employee not found");
             }
-
-            return View(employeeToDelete);
+            return View(employee);
         }
 
         [HttpPost]
         [ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            EmployeeModel employeeToDelete = empList.Find(e => e.Id == id);
-            if (employeeToDelete != null)
-            {
-                empList.Remove(employeeToDelete);
-
-                // Updating ID of existing employees
-                for (int i = 0; i < empList.Count; i++)
-                {
-                    empList[i].Id = i + 1;
-                }
-
-                Session["empList"] = empList;
-            }
-
+            employeeDataAccess.DeleteEmployee(id);
             return RedirectToAction("Index");
         }
 

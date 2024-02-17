@@ -1,24 +1,25 @@
-﻿@model EmployeeManagementSystem.Models.EmployeeModel
+﻿@model EmployeeManagementLibrary.Employee
 
 @{
     ViewBag.Title = "Details";
 }
 
-<h2>Details of the Employee</h2>
+<h2>Details</h2>
 
 <div>
-    @*<h4>EmployeeModel</h4>*@
+    <h4>Employee</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Id):
+            @Html.DisplayNameFor(model => model.Id)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Id)
         </dd>
+
         <dt>
-            @Html.DisplayNameFor(model => model.Name):
+            @Html.DisplayNameFor(model => model.Name)
         </dt>
 
         <dd>
@@ -26,12 +27,13 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Department):
+            @Html.DisplayNameFor(model => model.Department)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Department)
         </dd>
+
     </dl>
 </div>
 <p>

@@ -1,0 +1,6 @@
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementLibrary\bin\Debug\EmployeeManagementLibrary.dll
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementLibrary\bin\Debug\EmployeeManagementLibrary.pdb
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementLibrary\obj\Debug\EmployeeManagementLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementLibrary\obj\Debug\EmployeeManagementLibrary.dll
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementLibrary\obj\Debug\EmployeeManagementLibrary.pdb
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementLibrary\obj\Debug\EmployeeManagementLibrary.csproj.AssemblyReference.cache

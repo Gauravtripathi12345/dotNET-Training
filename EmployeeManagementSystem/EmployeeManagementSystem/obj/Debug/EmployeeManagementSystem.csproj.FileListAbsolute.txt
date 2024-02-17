@@ -77,3 +77,5 @@ C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeMana
 C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.dll
 C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.pdb
 C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\EmployeeManagementSystem.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmployeeManagementLibrary.dll
+C:\Users\hp\Desktop\Tricon\dotNET-Training\EmployeeManagementSystem\EmployeeManagementSystem\bin\EmployeeManagementLibrary.pdb
