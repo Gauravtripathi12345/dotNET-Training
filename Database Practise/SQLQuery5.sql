@@ -1,11 +1,15 @@
 select * from Products
 
 select ProductID, UnitPrice, 2*UnitPrice from Products
-
-/* Alias :temporary names given to the column 
+/* 
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$--------------------
+											Alias:
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-----------------------------------
+Alias :temporary names given to the column 
 Can write the alias name in doube inverted commas, single inverted commas,or even without commas
 
 If we do not assign any alias, then it displays "(No column name)"
+
 */
 select ProductID, UnitPrice,(UnitPrice*0.10) discountAmt, UnitPrice-(UnitPrice*0.10)finalAmt from Products
 
@@ -13,11 +17,12 @@ select ProductID, UnitPrice,(UnitPrice*0.10) discountAmt, UnitPrice-(UnitPrice*0
 select ProductID, UnitPrice,(UnitPrice*0.10) discountFig, UnitPrice-(UnitPrice*0.10)SellingPriceAfterDiscount from Products
 
 
-----------------------------------------------------------------------------
-/*
+/* 
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$--------------------
+											NUll:
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-----------------------------------
 Comparison of NULL is not allowed with following operators: 
-Null cannot be compared with >,<,>=,<=, !=, =. These opeartors are applied with numbers
-
+Null cannot be compared with >,<,>=,<=, !=, =. These opeartors are applied with numbers.
 To comapre NULL we use "is null" or "is not null" operator
 */
 
@@ -33,8 +38,11 @@ where Region is not null
 select ProductID, UnitPrice,(UnitPrice*0.10) discountFig, UnitPrice-(UnitPrice*0.10)SellingPriceAfterDiscount from Products
 where UnitPrice>10
 
-----------------------------------------------------------------------------------
-/*
+/* 
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$--------------------
+											ISNULL():
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-----------------------------------
+
 ISNULL() function is used to replace NULL values with a specified replacement value. 
 
 Syntax: ISNULL(expression, replacement_value)
@@ -52,13 +60,18 @@ select SupplierID, CompanyName,City, ISNULL(HomePage, 'Cannot Find') as HomePage
 
 --select SupplierID, CompanyName,City, ISNULL(HomePage, 'Cannot Find')'HomePage' from Suppliers
 
--------------------------------------------------------------------------------
 
-/* TOP Clause & order by clause
+
+/* 
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$--------------------
+											TOP Clause & order by clause
+-------------------------------$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-----------------------------------
+
 When you use TOP in a query, it instructs the database to return only a specified number of rows that meet the query criteria. 
 
 Used for TOP N Analysis:
 */
+
 select top 10 SupplierID, CompanyName from Suppliers
 
 select top 10 ProductID, ProductName from Products
